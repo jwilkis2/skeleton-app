@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 
 @Component({
   selector: 'app-two-button',
@@ -6,8 +6,9 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./two-button.component.css']
 })
 export class TwoButtonComponent implements OnInit {
-
-  constructor() { }
+  @Input() leftButton: string;
+  @Input() rightButton: string;
+  constructor() {}
 
   ngOnInit() {
   }

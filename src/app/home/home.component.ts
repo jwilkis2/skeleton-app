@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { TwoButtonComponent } from '../two-button/two-button.component';
 
 @Component({
   selector: 'app-home',
@@ -6,8 +7,8 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./home.component.css']
 })
 export class HomeComponent implements OnInit {
-
-  constructor() { }
+  twoButton: TwoButtonComponent;
+  constructor() {}
 
   ngOnInit() {
   }
