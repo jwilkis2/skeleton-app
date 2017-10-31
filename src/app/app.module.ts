@@ -16,6 +16,8 @@ import {
   RouterModule,
   Routes
 } from '@angular/router';
+import { MessageLeftComponent } from './message-left/message-left.component';
+import { MessageRightComponent } from './message-right/message-right.component';
 
 const routes: Routes = [
   { path: '', redirectTo: 'home', pathMatch: 'full' },
@@ -34,7 +36,9 @@ const routes: Routes = [
     TwoButtonComponent,
     HomeComponent,
     SettingsComponent,
-    DashboardComponent
+    DashboardComponent,
+    MessageLeftComponent,
+    MessageRightComponent
   ],
   imports: [
     BrowserModule,
